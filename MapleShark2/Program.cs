@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Reflection;
+using System.Text;
 using System.Windows.Forms;
 using MapleShark2.Tools;
 using MapleShark2.UI;
@@ -17,6 +18,8 @@ namespace MapleShark2 {
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            
+            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
 
             using (var splashForm = new SplashForm()) {
                 if (splashForm.ShowDialog() != DialogResult.OK) {

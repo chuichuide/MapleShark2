@@ -250,8 +250,8 @@ namespace MapleShark2.UI
                 packet.ReadShort(false);
                 uint version = (uint)packet.ReadShort(false);
                 packet.ReadInt(false);
-                packet.ReadString();
-                
+                packet.ReadString(false);
+
                 uint siv = 40;
                 uint riv = 40 + 3;
                 uint blockIV = 0;

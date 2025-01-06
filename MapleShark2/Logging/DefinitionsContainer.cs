@@ -5,11 +5,9 @@ using System.Text;
 using System.Xml;
 using System.Xml.Serialization;
 using MapleShark2.Tools;
-using DefinitionsIndex =
-    System.Collections.Generic.Dictionary<(byte Locale, uint Version), System.Collections.Generic.Dictionary<(bool
-        Outbound, ushort Opcode), MapleShark2.Logging.Definition>>;
-using DefinitionConfigMap =
-    System.Collections.Generic.Dictionary<(bool Outbound, ushort Opcode), MapleShark2.Logging.Definition>;
+using DefinitionsIndex = System.Collections.Generic.Dictionary<(byte Locale, uint Version), System.Collections.Generic.Dictionary<(bool
+    Outbound, ushort Opcode), MapleShark2.Logging.Definition>>;
+using DefinitionConfigMap = System.Collections.Generic.Dictionary<(bool Outbound, ushort Opcode), MapleShark2.Logging.Definition>;
 
 namespace MapleShark2.Logging {
     public sealed class DefinitionsContainer {
