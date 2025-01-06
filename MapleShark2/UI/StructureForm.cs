@@ -15,7 +15,7 @@ namespace MapleShark2.UI {
         private static readonly Logger logger = LogManager.GetCurrentClassLogger();
 
         private readonly ScriptManager scriptManager;
-        private readonly Stack<StructureNode> subNodes = new Stack<StructureNode>();
+        private readonly Stack<StructureNode> subNodes = new();
 
         private MaplePacket packet;
         private MainForm MainForm => ParentForm as MainForm;

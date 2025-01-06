@@ -161,7 +161,7 @@ namespace MapleShark2.Tools {
                     dataSize += 2 + packet.Length;
                 }
 
-                writer.WriteLine($"=== MapleStory2 Version: {metadata.Build}; Region: {metadata.Locale} ===");
+                writer.WriteLine($"=== BNB Version: {metadata.Build}; Region: {metadata.Locale} ===");
                 writer.WriteLine($"Endpoint From: {metadata.LocalEndpoint}:{metadata.LocalPort}");
                 writer.WriteLine($"Endpoint To: {metadata.RemoteEndpoint}:{metadata.RemotePort}");
                 writer.WriteLine($"- Packets: {packets.Count}");
