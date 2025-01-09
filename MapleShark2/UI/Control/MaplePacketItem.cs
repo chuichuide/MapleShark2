@@ -10,7 +10,7 @@ namespace MapleShark2.UI.Control
             packet.Timestamp.ToString("yyyy-MM-dd HH:mm:ss.fff"),
             packet.Outbound ? "Outbound" : "Inbound",
             packet.Length.ToString(),
-            $"0x{packet.Opcode:X4}",
+            $"0x{packet.Opcode:X4} / {packet.Opcode}",
             name
         }) {
             this.Name = name;

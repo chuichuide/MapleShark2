@@ -54,7 +54,7 @@ namespace MapleShark2.UI {
                 Definition definition =
                     Config.Instance.GetDefinition(session.Build, session.Locale, op.Outbound, op.Header);
                 int addedIndex = dropdownOpcode.Items.Add(
-                    $"{(op.Outbound ? "OUT " : "IN  ")} 0x{op.Header:X4} {definition?.Name ?? ""}");
+                    $"{(op.Outbound ? "OUT " : "IN  ")} 0x{op.Header:X4} / {op.Header} {definition?.Name ?? ""}");
 
                 if (selected != null && selected.Outbound == op.Outbound && selected.Header == op.Header) {
                     dropdownOpcode.SelectedIndex = addedIndex;
